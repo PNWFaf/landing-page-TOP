@@ -39,6 +39,7 @@ a {
 .block1 {
   display: flex;
   flex-direction: column;
+
   max-width: 50%;
 }
 .block2 {
@@ -56,6 +57,7 @@ a {
 }
 .info {
   display: flex;
+  justify-content: flex-start;
   font-size: 18px;
   color: #E5E7EB;
   margin-right: 100px;
@@ -80,41 +82,86 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   color: #3882F6;
   max-width: 50%;
-  margin: 20px;
+  margin: 20px 20px 0 20px;
 }
-#box1 #box2 #box3 #box4 {
+.box div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 20%;
   margin: 0 20px 0 20px;
+}
+
+button {
+  border-radius: 5px;
+  border: #3882F6;
+  padding: 5px 20px 5px 20px;
+  background-color: #3882F6;
+  color: white;
+}
+img {
+  border-radius: 5px;
 }
 .quote {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-size: 36px;
-  font-style: light italic;
-  color: #1F2937;
+  justify-content: center;
   background-color: #E5E7EB;
   margin: 24px 0 24px 0;
 }
-
+.text {
+  font-size: 36px;
+  font-style: italic;
+  color: #1F2937;
+  padding: 20px 200px;
+}
+.author {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1F2937;
+  padding: 0px 240px 20px 0px;
+}
 .call {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: #3882F6;
+  color: white;
   margin: 24px 48px 24px 48px;
-  padding: 24px;
+  border-radius: 10px;
+}
+.call >h3 {
+  padding: 10px 0px 0px 50px;
 }
 
+
+.sign-up {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0px 50px 20px 50px;
+}
+
+.call button {
+  background-color: #3882F6;
+  color: white;
+  border: 1px solid white;
+  height: 24px;
+
+
+}
 .footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-button {
-  background-color: #3882F6;
-  color: white;
 }
